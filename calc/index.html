@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/icon.ico">
+	<title>Счётчик сложных процентов</title>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	    <link rel="stylesheet" href="css/style.css" >
+</head>
+	
+<body>
+	<div class="calc-wrap"><div class="container">
+		
+		
+			<div class="glcontainer1">
+				
+				<!--<div>Сколько вы планируете откладывать каждый месяц (желательно е мнеее 10% от дохода): <br>
+					<input type="number" value="3000" class="summa"> рублей. </div>-->
+				<div class="row">
+					<div class="opis col-lg-5">
+
+						<p>Чтобы провести рассчёты подставьте свои данные  в поля ввода (по стандарту стоят данные из примера статьи: "ссылка") и нажмите на кнопку "рассчитать". 
+							<br>Если вам требуется дополнительная информация по полю, наведите на него курсор мыши, в подсказках вы получите больше информации.</p>
+					</div>
+					<div class="calc col-lg-7">
+						<div class="wrap-dohod" title="Ваш текущий (или прогнозируемый) среднемесячный доход."><label>Ваш текущий доход: 
+							<input type="number" value="36000" class="dohod"> ₽/мес.</label>
+						</div>
+						<div class="wrap-procent" title="Какой процент от дохода вы планируете откладывать ежемесячно?  (Желательно не менее 10%)"><label >Какой % от дохода вы планируете откладывать: <input type="number" value="10" class="procent">% в мес.</label>
+						</div>
+						<div class="wrap-srok" title="Через какое время вы планируете полностью перейти на пассивный доход?"><label >На какой период делать расчёты:
+							на <input type="number" value="30" class="srok"> лет. </label></div>
+						<div class="wrap-cap1" title="Каким капиталом вы обладаете на данный момент?"><label >Ваш текущий капитал: 
+								<input type="number" value="0" class="cap1"> ₽</label></div>
+						<div class="wrap-invest_dohod" title="Под какой  процент(в среднем) вы планируете инвестировать свои деньги?"><label >Средняя доходность инвестиций: 
+								<input type="number" value="30" class="invest_dohod">% годовых. </label></div>
+						<div class="wrap-min_invest_cap" title="Обладая каким капиталом вы планируете заняться инвестициями?"><label >Минимальный капитал для инвестирования: от 
+								<input type="number" value="300000" class="min_invest_cap" > рублей.</label></div>
+						<div class="wrap-depozit_dohod" title='Какая средняя доходность по депозиту, на котором вы планируете держать свои деньги до начала инвестирования?'><label >Средняя доходность банковского депозита
+								 <input type="number" value="7.5" class="depozit_dohod">% годовых. </label></div>
+							 <div class="wrap-inv"> <label>Среднегодовая инфляция составит ~ 
+							 		<input type="number" value="10" class="inv">%.</label>
+							 </div>
+						<br>
+						<button class="slproc_btn">рассчитать</button>
+					</div>
+				</div>
+		
+			</div>
+			<div class="glcontainer2">
+				
+				<p>Если вы, начиная с этого месяца, будете откладывать <b><span class="otv_summa">N</span> рублей</b> ежемесячно и начнёте инвестировать минимум под <b><span class="otv_proc">0</span>% </b>годовых (начиная с капитала в <b><span class="otv_min_invest_cap">N</span> рублей</b>), постоянно  реинвестируя проценты, то через <b><span class="otv_srok">0</span> лет </b>ваш капитал вырастит до ~ <b><span class="otv_cap1">ответ</span> рублей</b>, покупательная способность которого будет эквивалентна ~ <b><span class="otv_cap2">ответ</span> рублей </b>на сегодняшний день (если учитывать среднюю инфляцию в <b><span class="otv_inv">N</span>%</b>). <br> <br>
+
+				Ваш ежемесячный пассивный доход составит <b><span class="otv_dohod1">ответ</span> рублей</b> (<b><span class="otv_dohod2">ответ</span> рублей </b>с учётом инфляции и необходимости реинвестирования). <br><br>
+		
+				Пассивный доход полностью перекроет текущий через <b><span class="col_let1">N</span> лет</b> (через <b><span class="col_let2">N</span> лет</b>, если учитывать инфляцию и необходимость реинвестирования).</p>
+				<p>Терпения и успехов в реализации!</p>
+				<div class="text-center">
+					<button class="btn-echoras">Рассчитать ещё раз</button>
+				</div>
+				<div class="vk-wrap">
+					<div class="row">
+						<p class="col-lg-9">Если у вас есть вопросы по работе калькулятора, вам нужна помощь в составлении инвест. стратегии или вы хотите подробнее узнать об актуальных возможностях инвестирования - пишите мне, я всегда открыт к диалогу и рад новым знакомствам.</p>
+						<div class="col-lg-3"><a href="http://vk.me/maksim_gribanau" target="_blank" class="btn-vk"><img src="img/vk.png" alt="1"> <span>написать</span></a></div>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
