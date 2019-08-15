@@ -1,0 +1,173 @@
+body{
+	max-width: 100%;
+	width: 100%;
+}
+input{
+	outline: none;
+	font-weight: bold;
+	padding: 1px 3px;
+	border: 1px solid grey;
+}
+input:focus{
+	border: 1px solid green;
+	color: green;
+}
+
+
+.calc-wrap{
+	font-family: Roboto;
+	font-size: 19px;
+	background: url(../img/fon.jpg) left no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	
+	
+
+}
+.glcontainer1{
+    flex-direction: column;
+    justify-content: center;
+}
+.opis{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.opis p{
+	display: inline-block;
+	width: 90%;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 25px;
+	display: block;
+	
+	border-radius: 10px;
+
+	
+
+}
+.calc{
+	background-color: rgba(255,255,255,0.75);
+	padding: 25px 35px;
+	border-radius: 10px;
+
+}
+.calc div{
+	margin-top: 10px;
+
+}
+.calc div label{
+	cursor: help;
+}
+
+.wrap-dohod input{
+	width: 100px;
+	max-width: 1000px;
+}
+.wrap-procent input{
+	width: 50px;
+}
+.wrap-srok input{
+	width: 50px;
+}
+.wrap-cap1 input{
+	width: 130px;
+}
+.wrap-invest_dohod input{
+	width: 50px;
+}
+.wrap-min_invest_cap input{
+	width: 130px;
+}
+.wrap-depozit_dohod input{
+	width: 50px;
+}
+.wrap-inv input{
+	width: 50px;
+}
+button{
+	width: 300px;
+	max-width: 100%;
+	height: 50px;
+	background-color: rgba(0,128,0, 1);
+	outline: none!important;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+}
+button:hover{
+	cursor: pointer;
+	background-color: rgba(0,128,0, 0.9);
+
+}
+.glcontainer2{
+	display: none;
+	margin: 0;
+	background-color: rgba(255,255,255, 0.8);
+	padding: 40px;
+	padding-top: 70px;
+	font-size: 20px;
+	min-height: 100vh;
+
+}
+.glcontainer2 b{
+	font-weight: bold;
+}
+.btn-echoras{
+	margin-top: 15px;
+}
+.btn-vk{
+	max-width: 190px;
+	display: block;
+	height: 50px;
+	color: #fff;
+	background-color: #5181b8;
+	border-radius: 20px;
+}
+.btn-vk:hover{
+	text-decoration: none;
+color: #fff;
+}
+.btn-vk img{
+	max-height: 50px;
+	margin-left: 5px;
+}
+.btn-vk span{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.vk-wrap{
+	display: none;
+	font-size: 18px;
+
+	margin-top: 60px;
+}
+.vk-wrap a{
+	font-size: 20px;
+}
+.vk-wrap .row{
+	
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 568px){
+.glcontainer2{
+	font-size: 18px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+}
